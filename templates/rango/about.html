@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
 	
 	<head>
@@ -12,8 +13,8 @@
 			<strong>{{boldmessage }}</strong><br />
 		</div>
 		<div>
-			{% load staticfiles %}
-			<img src={% static "images/nebula.jpg" %} alt="nebula">
+			
+			<img src="{% static "images/nebula.jpg" %}" alt="nebula">
 			<img src="{{ MEDIA_URL}}cat.jpg" />
 
 		</div>
